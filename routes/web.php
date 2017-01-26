@@ -12,6 +12,5 @@
 */
 
 Route::get('/', function () {
-	echo mt_rand(1000, 99999);exit;
-    return view('welcome');
+    return view('home');
 });
