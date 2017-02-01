@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Services\StocksIndexData;
+// use App\Http\Requests\StockCreateRequest;
 use App\Stock;
 
 class StocksController extends Controller

@@ -10,7 +10,7 @@ class StocksIndexData
     /**
      * 获取首页数据
      *
-     * @return void
+     * @return array
      */
     public function indexData($request)
     {
@@ -58,11 +58,12 @@ class StocksIndexData
     /**
      * 获取待入库数据
      *
-     * @return void
+     * @return array
      */
     public function insertData($request = '')
     {
-        if ($request->goods_num || $request->bar_code) {
+        // Cache::forget('insert-stocks');
+        if ($request->goods_num && $request->bar_code) {
             return $this->addInsertData($request);
         }
 
@@ -126,7 +127,7 @@ class StocksIndexData
     /**
      * 待入库数据入库
      * 
-     * @return bool
+     * @return void
      */
     public function insertDatas()
     {
