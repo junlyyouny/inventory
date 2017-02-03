@@ -14,6 +14,6 @@ return [
     */
    
     'failed' => '这些凭据与我们的记录不匹配。',
-    'throttle' => '您的尝试登录次数过多. 请 :seconds 秒后再试。',
-    
+    'throttle' => '您的尝试登录次数过多，请 :seconds 秒后再试。',
+
 ];
